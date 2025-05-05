@@ -22,6 +22,25 @@ This folder contains my Java exercises from Workbook 4.
   - Filtering and sorting objects
   - Working with dates using `LocalDateTime`
 
+### ✅ HotelOperations
+- Builds core classes for a hotel application using object-oriented programming
+- Defines and uses the following classes:
+  - `Room` – tracks beds, price, occupancy, cleanliness, and availability
+  - `Reservation` – stores guest stay info, calculates price with weekend adjustment
+  - `Employee` – tracks employee payroll, including regular and overtime hours
+- Great practice for:
+  - Using constructors to initialize objects
+  - Writing derived getters and conditional logic
+  - Encapsulating data with private fields and public methods
+  - Working with class design for real-world use cases
+- Exercise 2 updates:
+  - `Room` – added `checkIn()`, `checkOut()`, and `cleanRoom()` methods to handle room status
+  - `Employee` – added `punchTimeCard()` to track hours worked using time inputs
+- Great practice for:
+  - Adding behavior (methods) to existing classes
+  - Updating object state based on method actions
+  - Working with time tracking and basic calculations
+
 ---
 
 ## ✨ What I Learned
