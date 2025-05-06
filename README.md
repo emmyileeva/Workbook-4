@@ -45,7 +45,15 @@ This folder contains my Java exercises from Workbook 4.
   - Method overloading and using `LocalDateTime`
   - Designing multiple constructors
   - Managing object state and availability logic
-
+- Exercise 4 updates:
+  - Created `RoomTest` to verify methods like `checkIn()`, `checkOut()`, and `cleanRoom()`
+    - Ensured proper room status changes and restrictions (e.g., can't check in if already occupied)
+  - Created `EmployeeTest` to verify punch-in and punch-out time tracking logic
+    - Tested time calculation for hourly tracking using assertions
+- Great practice for:
+  - Writing unit tests using JUnit
+  - Testing class behavior and verifying object state
+  - Using assertions to catch bugs early and ensure expected behavior
 
 ---
 
