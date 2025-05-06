@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalDateTime;
+
 public class Employee {
 
     private String employeeId;
@@ -40,22 +42,36 @@ public class Employee {
         }
     }
 
-    public void punchTimeCard(double time) {
+    public void punchIn(double time) {
         if (!isPunchedIn) {
-            // punch in
-            lastPunchInTime = time;
             isPunchedIn = true;
-            System.out.println("Punched in at: " + time);
+            lastPunchInTime = time;
+            System.out.println(name + " punched in at " + time + ".");
         } else {
-            // punch out
-            double hoursWorkedToday = time - lastPunchInTime;
-            if (hoursWorkedToday > 0) {
-                hoursWorked += hoursWorkedToday;
-                System.out.println("Punched out at: " + time + ". Hours worked today: " + hoursWorkedToday);
-            } else {
-                System.out.println("Invalid punch out time. Punch out time must be greater than punch in time.");
-            }
-            isPunchedIn = false;
+            System.out.println("Already punched in.");
         }
+    }
+
+    public void punchOut(double time) {
+        if (isPunchedIn) {
+            isPunchedIn = false;
+            double hoursWorkedToday = time - lastPunchInTime;
+            hoursWorked += hoursWorkedToday;
+            System.out.println("Punched out at " + time + ". Worked " + hoursWorkedToday + " hours today.");
+        } else {
+            System.out.println("Already punched out.");
+        }
+    }
+
+    public void punchIn() {
+        LocalDateTime now = LocalDateTime.now();
+        double time = now.getHour() + (now.getMinute() / 60.0);
+        punchIn(time);
+    }
+
+    public void punchOut() {
+        LocalDateTime now = LocalDateTime.now();
+        double time = now.getHour() + (now.getMinute() / 60.0);
+        punchOut(time);
     }
 }
