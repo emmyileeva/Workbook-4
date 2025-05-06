@@ -36,10 +36,16 @@ This folder contains my Java exercises from Workbook 4.
 - Exercise 2 updates:
   - `Room` – added `checkIn()`, `checkOut()`, and `cleanRoom()` methods to handle room status
   - `Employee` – added `punchTimeCard()` to track hours worked using time inputs
+- Exercise 3 updates:
+  - `Employee` – added overloaded `punchIn()` and `punchOut()` methods that use the current time
+  - `Hotel` – new class that tracks room inventory and bookings for King Suites and Basic Doubles
+    - Includes logic for checking availability and booking rooms
+    - Adds derived getters: `getAvailableSuites()` and `getAvailableRooms()`
 - Great practice for:
-  - Adding behavior (methods) to existing classes
-  - Updating object state based on method actions
-  - Working with time tracking and basic calculations
+  - Method overloading and using `LocalDateTime`
+  - Designing multiple constructors
+  - Managing object state and availability logic
+
 
 ---
 
