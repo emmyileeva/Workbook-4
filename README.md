@@ -55,6 +55,19 @@ This folder contains my Java exercises from Workbook 4.
   - Testing class behavior and verifying object state
   - Using assertions to catch bugs early and ensure expected behavior
 
+### ✅ StaticClasses
+- Builds a utility-style class (`NameFormatter`) with only static methods
+- Includes overloaded `format()` methods to format names in different ways:
+  - With just first and last name
+  - With prefix, middle name, suffix, etc.
+  - From a full formatted string (like "Dr. Mel B Johnson, PhD")
+- Uses a private constructor to prevent instantiation
+- Includes JUnit tests to verify all formatting cases
+- Great practice for:
+  - Creating and using static methods
+  - Working with `StringBuilder` and conditionals
+  - Writing unit tests to cover multiple input scenarios
+
 ---
 
 ## ✨ What I Learned
