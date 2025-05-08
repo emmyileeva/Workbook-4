@@ -68,6 +68,23 @@ This folder contains my Java exercises from Workbook 4.
   - Working with `StringBuilder` and conditionals
   - Writing unit tests to cover multiple input scenarios
 
+### ✅ BlackJack
+- Builds a playable version of the card game BlackJack using Java classes and logic
+- Defines and uses the following classes:
+  - `Card` – represents a single playing card with suit, value, and point logic
+  - `Deck` – builds and shuffles a standard 52-card deck, and deals cards
+  - `Hand` – tracks cards held by a player and calculates hand value (including Ace logic)
+  - `Player` – represents a player with a name and hand
+  - `Main` – handles player setup, game logic, and winner announcement
+- Includes input for number of players and their names
+- Automatically deals two cards to each player and announces the winner
+- Bonus: Handles Ace as 1 or 11 depending on hand value to avoid busting
+- Great practice for:
+  - Object-oriented design in games
+  - Handling game logic with loops and conditions
+  - Managing user input and tracking player state
+  - Implementing scoring systems with real-world rules
+
 ---
 
 ## ✨ What I Learned
